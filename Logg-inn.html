@@ -7,20 +7,23 @@
     <title>Logg inn</title>
     <link rel="stylesheet" href="/dist/css/styles.css" />
   </head>
-  <body class="text-center">
-    <h1 class="">InstaTweet</h1>
+  <body class="text-center ">
+    <div class="container-fluid">
+    <h1>InstaTweet</h1>
+    
     <div class="">
+        <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
       <img
-        src="images/bilde av meg.jpg"
-        class="img-thumbnail rounded-circle"
+        src="images/user-icon-jpg-28.jpg"
+        class="img-thumbnail rounded-circle w-25 mt-5 mb-3"
         id="profile-img"
         alt=""
       />
     </div>
-    <h2>Log in to your account</h2>
+    <h2 class="mb-4">Log in to your account</h2>
 
     <form action="" method="get">
-      <div class="">
+      <div class="mb-2">
         <label for="email"></label>
         <input type="email" name="E-mail" id="email" placeholder="E-mail" />
       </div>
@@ -32,11 +35,11 @@
       <div class="d-flex align-items-center justify-content-center">
         <input type="checkbox" name="" id="" />
         <p class="mx-3 mt-2">remember me</p>
-        <a href=""> <p>Forgot Password</p></a>
+        <a href=""><p>Forgot Password?</p></a>
       </div>
-      <button class="btn">Log inn</button>
-      <p>Don`t have an account? Sign up</p>
-      <button class="btn">Sign in with Google</button>
+      <button class="btn my-3">Log inn</button>
+      <p class="mb-2">Don`t have an account? Sign up</p>
+      <button class="btn my-3">Sign in with Google</button>
     </form>
 
     <!--https://worldvectorlogo.com/downloaded/aivalable-on-the-app-store-2-->
@@ -46,10 +49,11 @@
     >
       <img
         src="images/aivalable-on-the-app-store-2.svg"
-        class="img-fluid"
+        class="img-fluid mx-3"
         alt=""
       />
-      <img src="images/get-it-on-google-play.svg" class="img-fluid" alt="" />
+      <img src="images/get-it-on-google-play.svg" class="img-fluid mx-3" alt="" />
     </div>
+</div>
   </body>
 </html>
