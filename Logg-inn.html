@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logg inn</title>
-</head>
-<body>
-    <h1>InstaTweet</h1>
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+  </head>
+  <body class="text-center">
+    <h1 class="">InstaTweet</h1>
     <div class="">
-        <img src="images/bilde av meg.jpg" alt="">
+      <img
+        src="images/bilde av meg.jpg"
+        class="img-thumbnail rounded-circle"
+        id="profile-img"
+        alt=""
+      />
     </div>
     <h2>Log in to your account</h2>
-    
-    <form action="" method="get" >
-        <div class="">
-            <label for="email"></label>
-            <input type="email" name="E-mail" id="email" placeholder="E-mail">
-        </div>     
 
-       <div class="">
-        <input type="password" name="password" id="" placeholder="Password">
-       </div> 
+    <form action="" method="get">
+      <div class="">
+        <label for="email"></label>
+        <input type="email" name="E-mail" id="email" placeholder="E-mail" />
+      </div>
 
-       <div class="">
-        <input type="checkbox" name="" id=""><span>remember me</span>
-        <a href=""> <p> Forgot Password </p></a>
-       </div>
-       <button class="">Log inn</button>
-       <p>Don`t have an account? Sign up</p>       
-       <button>Sign in with Google</button>
+      <div class="">
+        <input type="password" name="password" id="" placeholder="Password" />
+      </div>
+
+      <div class="d-flex align-items-center justify-content-center">
+        <input type="checkbox" name="" id="" />
+        <p class="mx-3 mt-2">remember me</p>
+        <a href=""> <p>Forgot Password</p></a>
+      </div>
+      <button class="btn">Log inn</button>
+      <p>Don`t have an account? Sign up</p>
+      <button class="btn">Sign in with Google</button>
     </form>
 
+    <!--https://worldvectorlogo.com/downloaded/aivalable-on-the-app-store-2-->
 
-<!--https://worldvectorlogo.com/downloaded/aivalable-on-the-app-store-2-->
-
-<div class="">
-    <img src="images/aivalable-on-the-app-store-2.svg" alt="">
-    <img src="images/get-it-on-google-play.svg" alt="">
-</div>
-
-</body>
+    <div
+      class="container d-flex align-items-center justify-content-center row-cols-3"
+    >
+      <img
+        src="images/aivalable-on-the-app-store-2.svg"
+        class="img-fluid"
+        alt=""
+      />
+      <img src="images/get-it-on-google-play.svg" class="img-fluid" alt="" />
+    </div>
+  </body>
 </html>
