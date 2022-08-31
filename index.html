@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/dist/css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/dist/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/bbebfafa64.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid ">
-          <h1>IT</h1>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-      </nav>
+      <div class="container-fluid">
+        <h1 class="text-primary">IT</h1>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 
-      <div class="border">
-        <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
+    <div class="border">
+      <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
       <img
         src="images/user-icon-jpg-28.jpg"
         class="img-thumbnail rounded-circle w-25 mt-5 mb-3"
@@ -29,24 +38,38 @@
     </div>
 
     <div class="mb-3 border">
-      <label for="exampleFormControlTextarea1" class="form-label">Start Post</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-    <button class="btn btn-primary mt-3">Send</button>
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Start Post</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="4"
+      ></textarea>
+      <div class="">
+        <i class="fa-regular fa-image"></i>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-location-dot"></i>
+        <i class="fa-regular fa-calendar"></i>
+
+        <i class="fa-regular fa-pen-to-square"></i>
+      </div>
+
+      <button class="btn btn-primary mt-3">Send</button>
     </div>
 
-
-    <div class="card mb-4">
+    <div class="card mb-2">
       <div class="border">
         <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
-      <img
-        src="images/user-icon-jpg-28.jpg"
-        class="img-thumbnail  w-25 mt-2 mb-2"
-        id="profile-img"
-        alt=""
-      />
-    </div>
+        <img
+          src="images/user-icon-jpg-28.jpg"
+          class="img-thumbnail w-25 mt-2 mb-2"
+          id="profile-img"
+          alt=""
+        />
+      </div>
     </div>
 
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
