@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
+      <div class="container-fluid ">
         <h1 class="text-primary">IT</h1>
         <form class="d-flex" role="search">
           <input
@@ -22,32 +22,33 @@
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-primary" type="submit">Search</button>
+          <button class="btn btn-outline-primary center" type="submit">Search</button>
         </form>
       </div>
     </nav>
 
-    <div class="text-center">
+    <div class="text-center ">
       <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
       <img
         src="images/user-icon-jpg-28.jpg"
-        class="img-thumbnail rounded-circle w-25 my-3"
+        class="img-thumbnail rounded-circle w-25 my-3 border border-4 border-primary"
         id="profile-img"
         alt=""
       />
       <p class="h3">Ola Nordmann</p>
     </div>
 
-    <div class="mb-3 mt-3 border-top border-3 border-primary">
-      <label for="exampleFormControlTextarea1" class="form-label mt-4"
+    <section class="d-flex align-items-center justify-content-center">
+    <div class="mb-3 mt-3 border-top border-3 border-primary row col-10 ">
+      <label for="exampleFormControlTextarea1" class="form-label mt-4 "
         >Start Post</label
       >
       <textarea
-        class="form-control"
+        class="form-control "
         id="exampleFormControlTextarea1"
-        rows="4"
+        rows="5"
       ></textarea>
-      <div class="ms-3 text-center">
+      <div class="ms-3 text-center ">
         <i class="fa-regular fa-image ms-3"></i>
         <i class="fa-solid fa-play ms-3"></i>
         <i class="fa-solid fa-location-dot ms-3"></i>
@@ -57,8 +58,9 @@
 
       <button class="btn btn-primary mt-3">Send</button>
     </div>
-
-    <div class="card mb-2">
+  </section>
+  <section class="d-flex align-items-center justify-content-center">
+    <div class="card mb-2 row col-10 ">
       <div class="border d-flex flex-row">
         <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
         <img
@@ -84,7 +86,7 @@
         </div>
       </div>
     </div>
-
+  </section>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
