@@ -1,4 +1,4 @@
-# CSS-frameworks-CA-SoMe-app
+# CSS frameworks Noroff Course assignment create a SoMe-app
 ## Goal
 To apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
 
