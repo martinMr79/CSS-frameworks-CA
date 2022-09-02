@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/dist/css/styles.css" />
+    <link rel="stylesheet" href="/dist/custom.css">
     <script
       src="https://kit.fontawesome.com/bbebfafa64.js"
       crossorigin="anonymous"
@@ -15,6 +16,10 @@
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid ">
         <a href="index.html" class="text-primary h1 text-decoration-none">IT</a>
+        <div class="">
+         <a href="/index.html"> <i class="fa-solid fa-house fa-xl me-3"></i></a>
+         <a href="/profile.html"> <i class="fa-solid fa-user fa-xl"></i></a>
+        </div>
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
@@ -22,34 +27,56 @@
             placeholder="Search"
             aria-label="Search"
           />
+          
           <button class="btn btn-outline-primary center" type="submit">Search</button>
         </form>
       </div>
     </nav>
 
     <div class="text-center">
+      <div class="">
         <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
         <img
           src="images/Nordmann_beskjert.jpg"
-          class="img-thumbnail rounded-circle w-50 my-3 border border-primary border-4"
+          class="img-thumbnail rounded-circle profile-img-size  my-3 border border-primary border-4 "
           id="profile-img"
           alt=""
         />
-        <p class="h3 text-primary">Ola Nordmann</p>
+      </div>
+        <h1 class="h2 text-primary">Ola Nordmann</h1>
 
         <div class="d-flex flex-column mb-3 align-items-center justify-content-start text-light-blue">
           <p><i class="fa-solid fa-house"></i> Oslo</p>
           <p><i class="fa-solid fa-user-group"></i> 194</p>
-          <p><i class="fa-solid fa-briefcase"></i> Student at Noroff</p>
+          <p><i class="fa-solid fa-briefcase pb-4"></i> Student at Noroff</p>
         </div>
 
         <div class="text-light-blue border-bottom border-2 border-primary">
-          <i class="fa-solid fa-gear mx-2 mb-3"></i>
-          <i class="fa-solid fa-camera mx-2 mb-3"></i>
-          <i class="fa-solid fa-pen-to-square mx-2 mb-3"></i>
-          <i class="fa-regular fa-bell mx-2 mb-3"></i>
-          <i class="fa-regular fa-image mx-2 mb-3"></i>         
+          <i class="fa-solid fa-gear mx-2 mb-4 fa-2xl"></i>
+          <i class="fa-solid fa-camera mx-2 mb-4 fa-2xl"></i>
+          <i class="fa-solid fa-pen-to-square mx-2 mb-4 fa-2xl"></i>
+          <i class="fa-regular fa-bell mx-2 mb-4 fa-2xl"></i>
+          <i class="fa-regular fa-image mx-2 mb-4 fa-2xl"></i>         
         </div>
+
+        <hr class="mt-5">
+        <h2>My images</h2>
+        <section class="row col-6">
+        <div class=" d-flex align-items-center justify-content-center">
+        
+        <div class="m-2 img-thumbnail img-fluid">
+          <img src="/images/Kari_nordmann.jpg" alt="">
+        </div> 
+        <div class="m-2 img-thumbnail img-fluid">
+          <img src="/images/Kari_nordmann.jpg" alt="">
+        </div> 
+        <div class="m-2 img-thumbnail img-fluid">
+          <img src="/images/Kari_nordmann.jpg" alt="">
+        </div> 
+        
+ 
+        </div>  
+      </section>
 
       </div>
   </body>
