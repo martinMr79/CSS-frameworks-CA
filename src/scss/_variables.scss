@@ -66,3 +66,7 @@ $card-bg:                           $white !default;
   overflow: auto;
   overflow-x: hidden;
 }
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
