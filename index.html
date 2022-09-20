@@ -4,65 +4,156 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logg inn</title>
+    <title>Get started</title>
     <link rel="stylesheet" href="/dist/css/styles.css" />
-    <link rel="stylesheet" href="/dist/custom.css" />
+    <script
+      src="https://kit.fontawesome.com/bbebfafa64.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container-sm text-center">
-      
-    <h1 class="mt-3 text-primary">InstaTweet</h1>
-        <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html" class="text-primary h1 text-decoration-none me-2">IT</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+        
+        <form class="d-flex mt-1" role="search">
+          <input
+            class="form-control mx-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-primary center" type="submit">
+            Search
+          </button>
+          <div class="d-flex align-items-center">
+            <a href="/index.html">
+              <i class="fa-solid fa-house fa-xl mx-3 mt-3"></i
+            ></a>
+            <a href="/profile.html">
+              <i class="fa-solid fa-user fa-xl mt-3"></i
+            ></a>
+          </div>
+        </form>
+      </div>
+      </div>
+    </nav>
+
+    <div class="text-center">
+      <!--Nordmann, av Wilhelmsen, E. (https://ndla.no/article/17668). CC BY-SA 4.0.-->
       <img
-        src="images/user-icon-jpg-28.jpg"
-        class="img-thumbnail rounded-circle w-25 mt-5 mb-3 border border-4 border-primary"
+        src="images/Nordmann_beskjert.jpg"
+        class="img-thumbnail rounded-circle w-25 my-3 border border-4 border-primary"
         id="profile-img"
-        alt="profile-img"
+        alt=""
       />
-      <section class="d-flex align-items-center justify-content-center">
-        <div class="row col-10">
-    <h2 class="mb-4">Log in to your account</h2>
-
-    <form action="" method="get" class="form-control border border-0">
-      <div class="mb-2">
-        <label for="email"></label>
-        <input type="email" name="E-mail" id="email" placeholder="ola@nordman.no " class="col-12 mb-4" />
-      </div>
-
-      <div class="">
-        <input pattern="[/w]+" type="password" name="password" id="" placeholder="password" class="col-12"/>
-      </div>
-
-      <div class="d-flex align-items-center justify-content-center form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked/>
-        <p class="mx-3 mt-3">remember me</p>
-        <a href="" class="mt-3 text-decoration-none"><p class="text-info">Forgot Password?</p></a>
-      </div>
-      <div class="row">
-      <a href="/main.html" class="btn btn-primary my-3 ">Log inn</a>
-      <p class="mb-2">Don`t have an account? <a href="/index.html">Sign up</a></p>
-      <a href="/main.html" class="btn btn-secondary my-3">Sign in with Google</a>
-    
+      <p class="h3">Ola Nordmann</p>
     </div>
-  
-    </form>
-  </div>
-  </section>
-    <!--https://worldvectorlogo.com/downloaded/aivalable-on-the-app-store-2-->
 
-    <div
-      class="container-fluid d-flex align-items-center justify-content-center row mt-5"
-    >
-      <img
-        src="images/aivalable-on-the-app-store-2.svg"
-        class=" mx-3 mb-5 col-3"
-        alt="App store"
-      />
-      <img src="images/get-it-on-google-play.svg" class=" mx-3 mb-5 col-3" alt="Google play" />
-    </div>
-</div>
-<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <form action="" method="post"></form>
+    <section class="d-flex align-items-center justify-content-center row">
+      
+      <div class="mb-3 mt-3 border-top border-3 border-primary col-10">
+        <label for="start-post" class="form-label mt-4">Start Post</label>
+        <textarea class="form-control" id="start-post" rows="5"></textarea>
+        <div class="ms-3 text-center mt-2 text-light-blue">
+          <i class="fa-regular fa-image fa-xl ms-3"></i>
+          <i class="fa-solid fa-play ms-3 fa-xl"></i>
+          <i class="fa-solid fa-location-dot ms-3 fa-xl"></i>
+          <i class="fa-regular fa-calendar ms-3 fa-xl"></i>
+          <i class="fa-regular fa-pen-to-square ms-3 fa-xl"></i>
+        </div>
+         <button class="btn btn-primary mb-5 mt-1">Send</button>
+        </div>    
+    </section>
+  </form>  
+
+
+    <h1 class=" text-center mb-5 text-primary">Latest Posts</h1>
+    <section class="d-flex align-items-center justify-content-center">
+      
+      <div class="card mb-2 row col-10">
+        <div class="border d-flex flex-row">
+          <img
+            src="images/Kari_nordmann.jpg"
+            class="img-thumbnail w-25 h-25 my-2"
+            id="profile-img"
+            alt=""
+          />
+
+          <div class="card-static-height overflow-auto">
+            <div class="d-flex flex-row-reverse me-2">
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-star me-2"></i>
+            </div>
+            <h3 class="h5">Kari Nordmann</h3>
+            <p class="p-0 mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              reiciendis aspernatur, aperiam cum cupiditate ducimus asperiores
+              magnam quod earum officia nobis amet molestias veritatis tenetur
+              odit, distinctio sequi rem repellendus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex align-items-center justify-content-center">
+      <div class="card mb-2 row col-10">
+        <div class="border d-flex flex-row">
+          <img
+            src="images/Kari_nordmann.jpg"
+            class="img-thumbnail w-25 h-25 my-2"
+            id="profile-img"
+            alt=""
+          />
+
+          <div class="card-static-height overflow-auto">
+            <div class="d-flex flex-row-reverse me-2">
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-star me-2"></i>
+            </div>
+            <h3 class="h5">Kari Nordmann</h3>
+            <p class="p-0 mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              reiciendis aspernatur, aperiam cum cupiditate ducimus asperiores
+              magnam quod earum officia nobis amet molestias veritatis tenetur
+              odit, distinctio sequi rem repellendus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="d-flex align-items-center justify-content-center">
+      <div class="card mb-2 row col-10">
+        <div class="border d-flex flex-row">
+          <img
+            src="images/Kari_nordmann.jpg"
+            class="img-thumbnail w-25 h-25 my-2"
+            id="profile-img"
+            alt=""
+          />
+
+          <div class="card-static-height overflow-auto">
+            <div class="d-flex flex-row-reverse me-2">
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-star me-2"></i>
+            </div>
+            <h3 class="h5">Kari Nordmann</h3>
+            <p class="p-0 mb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              reiciendis aspernatur, aperiam cum cupiditate ducimus asperiores
+              magnam quod earum officia nobis amet molestias veritatis tenetur
+              odit, distinctio sequi rem repellendus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-  
 </html>
- 

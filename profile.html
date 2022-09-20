@@ -13,21 +13,34 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid ">
-        <a href="main.html" class="text-primary h1 text-decoration-none">IT</a>
-        <form class="d-flex" role="search">
+      <div class="container-fluid">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="index.html" class="text-primary h1 text-decoration-none me-2">IT</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+        
+        <form class="d-flex mt-1" role="search">
           <input
-            class="form-control me-2"
+            class="form-control mx-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-primary center" type="submit">Search</button>
-          <div class="d-flex">
-            <a href="/main.html"> <i class="fa-solid fa-house fa-xl mx-3 mt-3"></i></a>
-            <a href="/profile.html"> <i class="fa-solid fa-user fa-xl mt-3"></i></a>
-           </div>
+          <button class="btn btn-outline-primary center" type="submit">
+            Search
+          </button>
+          <div class="d-flex align-items-center">
+            <a href="/index.html">
+              <i class="fa-solid fa-house fa-xl mx-3 mt-3"></i
+            ></a>
+            <a href="/profile.html">
+              <i class="fa-solid fa-user fa-xl mt-3"></i
+            ></a>
+          </div>
         </form>
+      </div>
       </div>
     </nav>
 
@@ -36,52 +49,103 @@
         <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
         <img
           src="images/Nordmann_beskjert.jpg"
-          class="img-thumbnail rounded-circle profile-img-size  my-3 border border-primary border-4 "
+          class="img-thumbnail rounded-circle profile-img-size my-3 border border-primary border-4"
           id="profile-img"
           alt=""
         />
       </div>
-        <h1 class="h2 text-primary">Ola Nordmann</h1>
+      <h1 class="h2 mb-4">Ola Nordmann</h1>
 
-        <div class="d-flex flex-column mb-5 align-items-center justify-content-start text-primary">
-          <p><i class="fa-solid fa-house"></i> Oslo</p>
-          <p><i class="fa-solid fa-user-group"></i> 194</p>
-          <p><i class="fa-solid fa-briefcase pb-4"></i> Student at Noroff</p>
-        </div>
-
-        <div class="text-light-blue border-bottom border-2 border-primary">
-          <i class="fa-solid fa-gear mx-2 mb-4 fa-2xl"></i>
-          <i class="fa-solid fa-camera mx-2 mb-4 fa-2xl"></i>
-          <i class="fa-solid fa-pen-to-square mx-2 mb-4 fa-2xl"></i>
-          <i class="fa-regular fa-bell mx-2 mb-4 fa-2xl"></i>
-          <i class="fa-regular fa-image mx-2 mb-4 fa-2xl"></i>         
-        </div>
-
-        
-        <h2 class="mt-2">My images</h2>
-        <section class="mt-4 mb-5">
-        <div class=" d-flex flex-wrap align-items-center justify-content-center">
-        
-        <div class="m-2 img-thumbnail img-fluid w-25 card">
-          <img src="/images/Kari_nordmann.jpg" alt="">
-        </div> 
-        <div class="m-2 img-thumbnail img-fluid w-25 card">
-          <img src="/images/Kari_nordmann.jpg" alt="">
-        </div> 
-        <div class="m-2 img-thumbnail img-fluid w-25 card">
-          <img src="/images/Kari_nordmann.jpg" alt="">
-        </div> 
-        <div class="m-2 img-thumbnail img-fluid w-25 card">
-          <img src="/images/Kari_nordmann.jpg" alt="">
-        </div> 
-        <div class="m-2 img-thumbnail img-fluid w-25 card">
-          <img src="/images/Kari_nordmann.jpg" alt="">
-        </div> 
-        
- 
-        </div>  
-      </section>
+      <div
+        class="d-flex flex-column mb-5 text-primary"
+      >
+        <p><i class="fa-solid fa-house"></i> Oslo</p>
+        <p><i class="fa-solid fa-user-group"></i> 194</p>
+        <p><i class="fa-solid fa-briefcase"></i> Student at Noroff</p>
+        <p><i class="fa-solid fa-envelope"></i> mamr@hotmail.no</p>
+        <p><i class="fa-solid fa-phone pb-4"></i> 0047-12345678</p>
 
       </div>
+
+      <div class="text-light-blue border-bottom border-2 border-primary">
+        <i class="fa-solid fa-gear mx-2 mb-4 fa-2xl"></i>
+        <i class="fa-solid fa-camera mx-2 mb-4 fa-2xl"></i>
+        <i class="fa-solid fa-pen-to-square mx-2 mb-4 fa-2xl"></i>
+        <i class="fa-regular fa-bell mx-2 mb-4 fa-2xl"></i>
+        <i class="fa-regular fa-image mx-2 mb-4 fa-2xl"></i>
+        
+      </div>
+      <h2 class="my-5">My posts</h2>
+
+      <section class="d-flex align-items-center justify-content-center">
+      
+        <div class="card mb-3 row col-6">
+          <div class="border d-flex flex-row">
+            <img
+              src="images/Nordmann_beskjert.jpg"
+              class="img-thumbnail w-25 h-25 my-2 col-6"
+              id="profile-img"
+              alt=""
+            />
+  
+            <div class="card-static-height overflow-auto ">
+   
+              <p class="h6 mt-2">Ola Nordmann</p>
+              <p class="p-0 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                reiciendis aspernatur, aperiam cum cupiditate ducimus asperiores
+                magnam quod earum officia nobis amet molestias veritatis tenetur
+                odit, distinctio sequi rem repellendus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="d-flex align-items-center justify-content-center">
+      
+        <div class="card mb-3 row col-6">
+          <div class="border d-flex flex-row">
+            <img
+              src="images/Nordmann_beskjert.jpg"
+              class="img-thumbnail w-25 h-25 my-2 col-6"
+              id="profile-img"
+              alt=""
+            />
+  
+            <div class="card-static-height overflow-auto ">
+   
+              <p class="h6 mt-2">Ola Nordmann</p>
+              <p class="p-0 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                reiciendis aspernatur, aperiam cum cupiditate ducimus asperiores
+                magnam quod earum officia nobis amet molestias veritatis tenetur
+                odit, distinctio sequi rem repellendus!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="mt-5">My images</h2>
+      <section class="mt-4 mb-5">
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+          <div class="m-2 img-thumbnail img-fluid w-25 card">
+            <img src="/images/Kari_nordmann.jpg" alt="" />
+          </div>
+          <div class="m-2 img-thumbnail img-fluid w-25 card">
+            <img src="/images/Kari_nordmann.jpg" alt="" />
+          </div>
+          <div class="m-2 img-thumbnail img-fluid w-25 card">
+            <img src="/images/Kari_nordmann.jpg" alt="" />
+          </div>
+          <div class="m-2 img-thumbnail img-fluid w-25 card">
+            <img src="/images/Kari_nordmann.jpg" alt="" />
+          </div>
+          <div class="m-2 img-thumbnail img-fluid w-25 card">
+            <img src="/images/Kari_nordmann.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
