@@ -9,7 +9,7 @@
   
   </head>
   <body>
-    <div class="container-sm text-center">
+    <div class="container text-center">
       <h1 class="mt-3 text-primary">InstaTweet</h1>
       <!--https://icon-library.com/icon/user-icon-jpg-28.html-->
       <img
@@ -23,7 +23,7 @@
           <h2 class="mb-4">Log in to your account</h2>
 
           <form
-            action="/index.html"
+            action="/profile.html"
             method="get"
             class="form-control border border-0"
           >
@@ -35,11 +35,12 @@
                 id="email"
                 placeholder="example@email.no "
                 class="form-control-lg mb-4"
+                minlength="8"
                 required
               />
             </div>
 
-            <div class="">
+            <div>
               <label for="password" class="form-label"></label>
               <input
                 
@@ -48,6 +49,7 @@
                 id="password"
                 placeholder="password"
                 class="form-control-lg"
+                minlength="6"
                 required
               />
             </div>
