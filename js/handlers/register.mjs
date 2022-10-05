@@ -1,6 +1,9 @@
 
+
+import { register } from "/js/api/auth/register.mjs";
+
 /**
- * Registers user input as an object when form is submitted 
+ * Stores user input as an object when form is submitted 
  */
 
 export function setRegisterFormListener() {
@@ -12,5 +15,7 @@ form.addEventListener("submit", (event) => {
     const formData = new FormData(form); 
     const profile = Object.fromEntries(formData.entries()) 
 
+    // Send it to the API
+    register(profile)
 })
 }

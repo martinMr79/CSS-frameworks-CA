@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
-                <form id="registerForm" method="post" action="/auth/register">
+                <form id="registerForm">
                     <div class="form-group mb-3">
                         <label for="">Name</label>
                         <input class="form-control" type="text" name="name" required pattern="^[\w]+$" title="User name must only contain lower case and upper case letters, and underscore. (Example: John_doe49)">
@@ -35,12 +35,12 @@
 
                     <div class="form-group mb-3">
                         <label for="">Banner</label>
-                        <input class="form-control" type="url" name="banner">
+                        <input class="form-control" type="url" name="banner" value="https://image.host/default.png">
                     </div>
 
                     <div class="form-group mb-3">
                         <label for="">Avatar</label>
-                        <input class="form-control" type="url" name="avatar">
+                        <input class="form-control" type="url" name="avatar" value="https://image.host/default.png">
                     </div>             
                     
                     <button class="btn btn-primary">Register</button>
