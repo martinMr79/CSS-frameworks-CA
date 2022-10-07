@@ -1,6 +1,6 @@
 import { setRegisterFormListener } from "./handlers/register.mjs";
 import { setLoginFormListener } from "./handlers/login.mjs";
-import { removePost } from "./api/posts/index.mjs";
+import * as post from "./api/posts/index.mjs";
 
 const path = location.pathname;
 
@@ -10,7 +10,10 @@ if (path === "/profile/login/index.html") {
   setRegisterFormListener();
 }
 
-//removePost(3147)
-
+//post.createPost()
+//post.removePost()
+//post.updatePost()
+//post.getPost()
+post.getPosts().then(console.log())
 
 
