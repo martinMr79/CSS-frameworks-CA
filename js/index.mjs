@@ -1,6 +1,6 @@
 import { setRegisterFormListener } from "./handlers/register.mjs";
 import { setLoginFormListener } from "./handlers/login.mjs";
-import { updatePost } from "./api/posts/update.mjs";
+import { removePost } from "./api/posts/index.mjs";
 
 const path = location.pathname;
 
@@ -10,11 +10,7 @@ if (path === "/profile/login/index.html") {
   setRegisterFormListener();
 }
 
-updatePost({
-    id: 3147,
-    title: "Hello World UPDATED",
-    body: "This is an UPDATED example post"
-})
+//removePost(3147)
 
 
 
