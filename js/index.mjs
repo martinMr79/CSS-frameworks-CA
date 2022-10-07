@@ -14,6 +14,8 @@ if (path === "/profile/login/index.html") {
 //post.removePost()
 //post.updatePost()
 //post.getPost()
-post.getPosts().then(console.log())
+post.getPosts().then(console.log)
+
+post.getPost(3068).then(console.log)
 
 
