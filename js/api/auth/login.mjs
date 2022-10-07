@@ -16,5 +16,8 @@ export async function login(profile) {
     })
 
   const result = await response.json()
+
+  localStorage.setItem("token", result.accessToken);  
+
   console.log(result)      
 } 
